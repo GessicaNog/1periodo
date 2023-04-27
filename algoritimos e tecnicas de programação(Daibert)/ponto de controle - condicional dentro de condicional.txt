@@ -1,0 +1,35 @@
+ 1- Capture o nome e o peso do nadador. Caso o nadador tenha acima de 100 quilos informe que é impossível obter desempenho dentro da água. Caso ele tenha menos de 100 quilos faça uma classificação com base a sua idade e respeitando a tabela abaixo: 
+< 7 anos => informe que não é possível nadar. Muito pequeno.
+> 7 anos e < 10 => categoria infantil 
+>=10 e < 15 => categoria juvenil 
+>=15 e < 18 => categoria quase lá 
+>= 18 => categoria adulto 
+Obs.: caso o atleta tenha mais de 60 anos não é possível nadar. Muito velho. 
+Obs.: Existe um erro no problema. Informe qual. Se implementado geraria um BUG no software. Descreva.
+
+1- Sistema solicita nome do nadador
+2- Usuário informa nome
+3- Sistema solicita o peso do nadador
+4- Usuário informa o peso
+5- Se o nadador estiver acima de 100 quilos
+5.1- imprime é impossivel obter desempenho dentro da água
+6- Se o nadador estiver com menos de 100 quilos
+6.1- Sistema solicita idade do nadador
+6.2- Se idade < 7anos
+6.2.1- imprime que não é possível nadar. Muito pequeno.
+6.3- Se idade > 7anos e idade < 10 anos
+6.3.1- imprime categoria infantil
+6.4- Se idade >= 10 anos e idade < 15 anos
+6.4.1- imprime categoria juvenil
+6.5- Se idade >= 15 anos e idade < 18 anos
+6.5.1- Imprime categoria quase la
+6.6- Se idade >= 18 anos 
+6.6.1- Imprime categoria adulto
+6.7- Se não se idade > 60 anos
+6.7.1- imprime não é possível nadar. Muito velho
+
+Bug encontrado:
+
+-> Se o usuario tiver 70 anos, por exemplo, ele irá entrar no item 6.6.1 e não no item 6.7.1 no qual deveria. 
+ Para corrigí-lo o item 6.6 deverá ser trocado por (se idade >= 18 e idade < 60)
+-> Ao rodar o sistema com idade a cima de 18 anos ele terá fim no item 6.6.1, pois pertencerá a essa condição.

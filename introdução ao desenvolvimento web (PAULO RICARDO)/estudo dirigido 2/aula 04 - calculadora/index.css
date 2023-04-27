@@ -1,0 +1,116 @@
+body,
+html {
+    width: 100vw;
+    height: 100vh;
+}
+
+.item {
+    grid-area: item;
+    background-color: white;
+}
+
+input {
+    background-color: white;
+    grid-area: input;
+    border: solid 2px black;
+}
+
+.grid {
+    display: grid;
+    grid-template-areas:
+        "input input input input"
+        "nove oito sete barra"
+        "seis cinco quatro asterisco"
+        "tres dois um subtracao"
+        "zero igual igual adicao";
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 10px;
+    width: 30vw;
+    height: 50vh;
+    align-self: center;
+    background-color: rgb(197, 195, 195);
+    padding: 3%;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+
+
+.igual {
+    grid-area: igual;
+    background-color: white;
+}
+
+.zero {
+    grid-area: zero;
+    background-color: white;
+}
+
+.adicao {
+    grid-area: adicao;
+    background-color: white;
+}
+
+.subtracao {
+    grid-area: subtracao;
+    background-color: white;
+}
+
+.um {
+    grid-area: um;
+    background-color: white;
+}
+
+.dois {
+    grid-area: dois;
+    background-color: white;
+}
+
+.tres {
+    grid-area: tres;
+    background-color: white;
+}
+
+.quatro {
+    grid-area: quatro;
+    background-color: white;
+}
+
+.cinco {
+    grid-area: cinco;
+    background-color: white;
+}
+
+.seis {
+    grid-area: seis;
+    background-color: white;
+}
+
+.asterisco {
+    grid-area: asterisco;
+    background-color: white;
+}
+
+.sete {
+    grid-area: sete;
+    background-color: white;
+}
+
+.oito {
+    grid-area: oito;
+    background-color: white;
+}
+
+.nove {
+    grid-area: nove;
+    background-color: white;
+}
+
+.barra {
+    grid-area: barra;
+    background-color: white;
+}

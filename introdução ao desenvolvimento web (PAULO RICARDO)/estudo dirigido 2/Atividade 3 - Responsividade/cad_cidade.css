@@ -1,0 +1,171 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-areas: "arealateral cabecalho cabecalho"
+        " arealateral conteudoprincipal conteudoprncipal"
+        " arealateral conteudoprincipal conteudoprncipal"
+        "arealateral rodape rodape";
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+
+}
+
+header {
+    background-color: #04C9F4;
+    grid-area: cabecalho;
+    text-align: center;
+    font-size: 20px;
+    width: 80vw;
+    height: 6vh;
+    color: black;
+}
+
+.selecionado {
+    color: #303030 !important;
+}
+
+.arealateral {
+    grid-area: arealateral;
+    width: 20vw;
+    height: 100vh;
+    background-color: #D9D9D9;
+}
+
+.arealateral1 {
+    background-color: #04C9F4;
+}
+
+.arealateral ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.arealateral nav a {
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+
+}
+
+.arealateral nav a:hover {
+    color: white;
+    text-shadow: 1px 1px #303030;
+
+}
+
+.arealateral nav li {
+    padding: 10px;
+    cursor: pointer;
+    border-bottom: 1px solid black;
+}
+
+.arealateral nav li:hover {
+
+    text-shadow: 1px 1px #555151;
+
+}
+
+.conteudo {
+    background-color: #D9D9D9;
+    width: 100%;
+    height: 100%;
+    align-self: center;
+    padding: 1%;
+
+}
+.coluna{
+    width:  100%;
+}
+
+input {
+    width: 100%;
+    height: 6vh;
+}
+
+#coluna1  {
+    width: 20%;
+    margin-right: 1%;
+}
+#coluna2 {
+    width: 100%;
+}
+
+section {
+    height: 88vh;
+    width: 80vw;
+}
+
+form {
+    width: 60vw;
+    height: 40vh;
+    margin: 3%;
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.linha {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+#linhabotoes{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    margin-top: 1%;
+}
+button{
+    width: 10vw;
+    height: 6vh;
+    font-size: medium;
+}
+#btn-cancelar{
+    background-color: white;
+    color: #04C9F4;
+}
+#btn-salvar{
+    color: white;
+    background-color: #04C9F4;
+}
+
+footer {
+    text-align: center;
+    color: #04C9F4;
+    font-size: larger;
+    font-style: italic;
+    width: 100%;
+    height: 8%;
+    grid-area: rodape;
+    
+}
+
+@media screen and (max-width:780px) {
+    body {
+        grid-template-areas: "arealateral cabecalho cabecalho"
+            "arealateral arealateral arealateral"
+            "arealateral conteudoprincipal conteudoprincipal"
+            "arealateral rodape rodape";
+        grid-template-columns: auto auto auto auto;
+        grid-template-rows: auto auto 90vh auto;
+    }
+
+    .arealateral ul {
+        display: flex;
+        justify-content: space-around;
+    }
+
+}

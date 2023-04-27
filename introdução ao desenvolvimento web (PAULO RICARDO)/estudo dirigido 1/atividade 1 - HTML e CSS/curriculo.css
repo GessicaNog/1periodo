@@ -1,0 +1,16 @@
+header {
+    border: solid 1px;
+    text-align: center;
+    background-color: aqua;
+    color: black;
+}
+
+footer {
+    border: solid 1px;
+    text-align: center;
+    background-color: rgb(48, 45, 45);
+    color: white;
+    height: 70px;
+    padding-top: 50px;
+    margin-top:20px ;
+}

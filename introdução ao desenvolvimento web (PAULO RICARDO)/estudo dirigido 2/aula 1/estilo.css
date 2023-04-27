@@ -1,0 +1,65 @@
+.sectionItem {
+    border: solid 1px;
+    width: 100px;
+    height: 100px;
+}
+
+.container {
+    background-color: bisque;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.containerflex-start {
+    background-color: bisque;
+    text-align: center;
+    display: flex;
+    justify-content: flex-start;
+
+}
+
+.containerflex-end {
+    background-color: bisque;
+    text-align: center;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.arealateral ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.arealateral nav a {
+    text-decoration: none;
+    text-align: center;
+    color: #bdafaf;
+    padding: 14px 16px;
+}
+
+.arealateral ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.arealateral nav li {
+    padding: 10px;
+    cursor: pointer;
+    border-bottom: 1px solid #666;
+    display: flex;
+}
+
+.arealateral nav li:hover {
+    background-color: #000;
+}
+
+._home {
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}

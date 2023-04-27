@@ -1,0 +1,22 @@
+header{
+    border: solid 1px; /*essa propriedade coloca uma borda no header*/
+    width: 100%; /*altera a largura da tag*/
+    text-align: center; /*alinha o texto ao centro*/
+    background-color: brown; /*muda a cor de fundo*/
+    color: #000000;
+}
+article{
+    border: solid 1px;
+}
+#section{
+    border: solid 1px;
+}
+#section1{
+    margin: 10px;
+}
+footer{
+    border: solid 1px;
+    height: 80px;
+    text-align: center;
+    padding-top: 50px;
+}
